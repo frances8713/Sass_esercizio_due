@@ -1,0 +1,48 @@
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+$flex: flex;
+$center: center;
+$border: 1px solid green;
+$borde1: 1px solid blue;
+
+.exercise {
+    border: 1px solid $color-primary; height: 350px; padding: 0 20px;
+    
+    .exercise-title { color: $color-tertiary; text-align: $center; text-decoration: underline $color-secondary; } 
+
+        .main { display: $flex; justify-content: $center; text-align: $center;}
+
+            .footer {display: $flex; justify-content: $center; width: 100%; margin-top: 30px;}
+}
+
+@mixin article-card($color, $font, $border) {
+    color: $color-secondary;
+    font-size: $font;   
+    border: $border;
+}
+
+.article-card { @include article-card(blue, 1rem, 1px solid green);
+
+}
+
+@mixin article-card2 ($color, $font, $border) {
+    color: $color-primary;
+    font-size: $font;
+    border: $border;
+}
+
+.article-card2 { @include article-card2(red, 1rem, 1px solid green);
+}
+
+//come avrei potuto abbreviare ancora di più visto che cambia solo il colore tel testo?//
+
+
+@mixin footer($color, $font, $border1) {
+    color: $color-tertiary;
+    font-size: $font;
+    border: $borde1;
+}
+
+.footer {@include footer(green, 24px ,1px solid blue)};
+

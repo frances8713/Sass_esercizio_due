@@ -1,0 +1,41 @@
+.exercise {
+  border: 1px solid red;
+  height: 350px;
+  padding: 0 20px;
+}
+.exercise .exercise-title {
+  color: green;
+  text-align: center;
+  text-decoration: underline blue;
+}
+.exercise .main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.exercise .footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.article-card {
+  color: blue;
+  font-size: 1rem;
+  border: 1px solid green;
+}
+
+.article-card2 {
+  color: red;
+  font-size: 1rem;
+  border: 1px solid green;
+}
+
+.footer {
+  color: green;
+  font-size: 24px;
+  border: 1px solid blue;
+}
+
+/*# sourceMappingURL=style.css.map */
